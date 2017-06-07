@@ -15,7 +15,8 @@ from . import repos
 from . import users
 from . import voting
 
-__all__ = ["comments", "exceptions", "issues", "misc", "prs", "repos", "users", "voting"]
+__all__ = ["comments", "exceptions", "issues", "misc", "prs", "repos", "users", "voting",
+           "projects", "cards", "columns"]
 
 log = logging.getLogger("github_api")
 
