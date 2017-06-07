@@ -30,6 +30,26 @@ class Issue(BaseModel):
     issue_id = pw.IntegerField(primary_key=True)
 
 
+class Project(BaseModel):
+    project_id = pw.IntegerField()
+    # name = pw.ForeignKeyField()
+    # body = pw.ForeignKeyField()
+    created_at = pw.DateField()
+    updated_at = pw.DateField()
+
+
+# TODO: Create models for project columns and cards
+
+'''
+class Card(BaseModel):
+
+
+class Column(BaseModel):
+
+
+'''
+
+
 class ActiveIssueCommands(BaseModel):
     comment = pw.ForeignKeyField(Comment, related_name="command")
     issue = pw.ForeignKeyField(Issue)

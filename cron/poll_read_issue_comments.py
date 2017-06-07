@@ -17,11 +17,13 @@ Command Syntax
 /vote remove-label=<LABEL_TEXT> removes label when ^^^
 /vote assign=<USER> assigns to user when ^^^
 /vote unassign=<USER> unassigns from user when ^^^
+/project opens a project based on issue when ^^^
 '''
 
 # If no subcommands, map cmd: None
 COMMAND_LIST = {
-        "/vote": ("close", "reopen")
+        "/vote": ("close", "reopen"),
+        "/project": ("open")
     }
 
 __log = logging.getLogger("read_issue_comments")
